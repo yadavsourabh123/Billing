@@ -1,0 +1,65 @@
+/* src/components/Header.css */
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  margin-right: 1rem;
+}
+
+.company-name {
+  font-size: 1.5rem;
+}
+
+.contact {
+  font-size: 0.8rem;
+  margin-top: 0.5rem; /* Adjust the margin as needed */
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem; /* Adjust the margin as needed */
+}
+
+.search input {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.search button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: #777;
+}
+
+@media (max-width: 600px) {
+  .company-name {
+    font-size: 1rem;
+  }
+
+  .contact,
+  .search {
+    margin-top: 0.3rem;
+  }
+}
